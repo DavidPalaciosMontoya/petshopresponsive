@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://use.fontawesome.com/releases/v6.1.0/css/all.css');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    /* width: 1029px; */
+    font-family: roboto;
+    font-size: 1.6rem;
+    height: 100vh;
+}
+.header2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #F0A83E;
+    width: 100%;
+    height: 54px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    position: relative;
+    width: 132.03px;
+    height: 19px;
+    left: 46.84px;
+}
+.menu {
+    position: relative;
+    display: none;
+    width: 20px;
+    height: 15.31px;
+    right: 40px;
+}
+ul {
+    display: flex;
+    color: #FFFFFF;
+    margin: 0px 40px 0px 0px ;
+}
+
+li {
+    padding-left: 20px;
+}
+
+.bowl {
+    /* position: absolute; */
+    background-image: url(../img/bowl.png);
+    height: 440px;
+    width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 6.03vw;
+}
+
+h2 {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    width: 88.1vw; 
+    /* width: 365px; */ /* --Esto va en media queries */
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+.descuento {
+    color: #3C2313;
+    font-size: 16px;
+    padding: 12px 0px 12px 0px; 
+}
+.comederos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0A83E;
+    height: 49px;
+    margin-inline-end: 10.6vw;
+    width: 34vw;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagenes {
+    height: 312px;
+    background-color: #FBFAF6;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.price {
+    color: #F0A83E;
+}
+h1 {
+    width: 212.89px;
+    text-align: center;
+}
+.listaProductos {
+    word-spacing: 13px;
+    padding: 20px 0px 49px 0px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 53px 0px 74px 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 298px;
+    height: 40px;
+    background: #3C2313;
+    border-radius: 15px;
+    margin: 5px;
+    color: #FFFFFF;
+    display: inline-block;
+    
+}
+button {
+    width: 199px;
+    height: 45px;
+    border-radius: 25px;
+}
+
+.reset {
+background-color: #8A8787;
+margin-right: 6px;
+}
+
+.submit {
+    background-color: #F0A83E;
+}
+
+.buttons {
+    display: flex;
+}
+
+.social {
+    background-color: #3C2313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+}
+.suscription {
+    background-color: #F0A83E;
+    position: relative;
+width: 100vw;
+height: 101px;
+}
+.footer2 {
+    position: relative;
+    background-color: #222222;
+    width: 100vw;
+    text-align: center;
+}
+
+@media screen and (max-width: 481px) {
+    ul {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    /* main {
+        width: 100vw;
+    } */
+
+
+    .productos   {
+        display: block;
+    }
+    h1 {
+        display: inline;
+    }
+    .productos {
+        text-align: center;
+    }
+    .productos .imagenes {
+        width: 265px;
+height: 312px;
+position: relative;
+display: inline-block;
+    }
+    h2 {
+        width: 365px;
+height: 54px;
+    }
+    .comederos {
+        width: 141px;
+height: 49px;
+    }
+}
